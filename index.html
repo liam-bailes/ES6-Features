@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset = "UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<link rel="stylesheet" href="prism-okadia-whitespace.css" />
+<header>
+</header>
+<body>
+    <div id="header">
+        <h1 id="main-heading">ECMAScript 6: Overview</h1>
+    </div>
+    <div id="nav">
+        <!--
+        <ul>
+            <li class="outer-list-els">
+                Constants
+                <ul class="inner-list-els">
+                    <li><button id="Constants"class="topic">Constants</button</li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Scoping
+                <ul class="inner-list-els">
+                    <li><button id ="Block_Scope" class="topic">Block Scope</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Arrow Functions
+                <ul class="inner-list-els">
+                    <li><button id="Arrow_Functions" class="topic">Arrow Functions</button></li>
+                    <li><button id="Lexical_this" class="topic">Lexical this</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Extended Parameter Handling
+                <ul class="inner-list-els">
+                    <li><button id="Default_Paremeter_Values" class="topic">Default Paremeter Values</button></li>
+                    <li><button id="Rest_Parameter" class="topic">Rest Parameter</button></li>
+                    <li><button id="Spread_Operator" class="topic">Spread Operator</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Template Literals
+                <ul class="inner-list-els">
+                    <li><button id="String_Interpolation" class="topic">String Interpolation</button></li>
+                    <li><button id="Raw_String_Access" class="topic">Raw String Access</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Extended Literals
+                <ul class="inner-list-els">
+                    <li><button id="Binary_&_octal_Literal" class="topic"> Binary & octal Literal</button></li>
+                    <li><button id="Unicode_String_&_RegExp_Literal"class="topic">Unicode String & RegExp Literal</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Enhanced Regular Expressions
+                <ul class="inner-list-els">
+                    <li><button id="Regular_Expression_Sticky_Matching" class="topic">Regular Expression Sticky Matching</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Enhanced object Properties
+                <ul class="inner-list-els">
+                    <li><button id="Property_Shorthand"class="topic">Property Shorthand</button></li>
+                    <li><button id="Computed_Property_Names"class="topic">Computed Property Names</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Destructuring
+                <ul class="inner-list-els">
+                    <li><button id="Array_Matching" class="topic">Array Matching</button></li>
+                    <li><button id="Object_Matching_Shorthand_Notation"class="topic">Object Matching Shorthand Notation</button></li>
+                    <li><button id="Object_Matching,_Deep_Matching"class="topic">Object Matching, Deep Matching</button></li>
+                    <li><button id="Object_And_Array_Matching,_Default_values"class="topic">Object And Array Matching, Default values</button></li>
+                    <li><button id="Parameter_Context_Matching"class="topic">Parameter Context Matching</button></li>
+                    <li><button id="Fail-Soft_Destruction"class="topic">Fail-Soft Destruction</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Modules
+                <ul class="inner-list-els">
+                    <li><button id="Value_Export/Import"class="topic">Value Export/Import</button></li>
+                    <li><button id="Default_&_Wildcard"class="topic">Default & Wildcard</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Classes
+                <ul class="inner-list-els">
+                    <li><button id="Class_Definition"class="topic">Class Definition</button></li>
+                    <li><button id="Class_Inheritance"class="topic">Class Inheritance</button></li>
+                    <li><button id="Static_Members"class="topic">Static Members</button></li>
+                    <li><button id="Getter-/Setter"class="topic">Getter /Setter</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Symbol Type
+                <ul class="inner-list-els">
+                    <li><button id="Symbol_Type"class="topic">Symbol Type</button></li>
+                    <li><button id="Global_Symbols"class="topic">Global Symbols</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Iterators
+                <ul class="inner-list-els">
+                    <li><button id="Iterator_&_For-Of_Operator"class="topic">Iterator & For-Of Operator</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Generators
+                <ul class="inner-list-els">
+                    <li><button id="Generator_Function,_Iterator_Protocol"class="topic">Generator Function, Iterator Protocol</button></li>
+                    <li><button id="Generator_Function,_Direct_Use"class="topic">Generator Function, Direct Use</button></li>
+                    <li><button id="Generator_Matching"class="topic">Generator Matching</button></li>
+                    <li><button id="Generator_Control-Flow"class="topic">Generator Control-Flow</button></li>
+                    <li><button id="Generator_Methods"class="topic">Generator Methods</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Map/Set
+                <ul class="inner-list-els">
+                    <li><button id="Set_Data-Structure" class="topic">Set Data-Structure</button></li>
+                    <li><button id="Map_data-Structure"class="topic">Map data-Structure</button></li>
+                    <li><button id="Weak-Link_Data_Structure"class="topic">Weak-Link Data Structure</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Typed Arrays
+                <ul class="inner-list-els">
+                    <li><button id="Typed_Arrays"class="topic">Typed Arrays</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                New Built-In Methods
+                <ul class="inner-list-els">
+                    <li><button if="Object_property_Assignment"class="topic">Object property Assignment</button></li>
+                    <li><button id="Array_Element_Finding"class="topic">Array Element Finding</button></li>
+                    <li><button id="String_Repeating"class="topic">String Repeating</button></li>
+                    <li><button id="String_Searching"class="topic">String Searching</button></li>
+                    <li><button id="Number_Type_Checking"class="topic">Number Type Checking</button></li>
+                    <li><button id="Number_Saftey_Checking"class="topic">Number Saftey Checking</button></li>
+                    <li><button id="Number_Comparison"class="topic">Number Comparison</button></li>
+                    <li><button id="Number_Truncation"class="topic">Number Truncation</button></li>
+                    <li><button id="Number_Sign_Determination"class="topic">Number Sign Determination</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Promises
+                <ul class="inner-list-els">
+                    <li><button id="Promise_Usage"class="topic">Promise Usage</button></li>
+                    <li><button id="Promise_Combination"class="topic">Promise Combination</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Meta-Programming
+                <ul class="inner-list-els">
+                    <li><button id="Proxying"class="topic">Proxying</button></li>
+                    <li><button id="Reflection"class="topic">Reflection</button></li>
+                </ul>
+            </li>
+            <li class="outer-list-els">
+                Internalisation / Localization
+                <ul class="inner-list-els">
+                    <li><button id="Collation"class="topic">Collation</button></li>
+                    <li><button id="Number_Formatting"class="topic">Number Formatting</button></li>
+                    <li><button id="Currency_Formatting"class="topic">Currency Formatting</button></li>
+                    <li><button id="Date/Time_Formatting"class="topic">Date/Time Formatting</button></li>
+                </ul>
+            </li>
+        </ul>
+        -->
+    </div>
+    <div id="main-content-body">
+        <div id="feature-description">
+            <p id="topic"></p>
+            <p id="concept"></p>
+            <p id="description-p">ECMAScript 6 is the 2015 instalment of the world's most popular programming
+                                  language commonly known as JavaScript. ES6 brought in many new features, some
+                                  having a profound impact on how the language is used. Constants, Arrow functions
+                                  and classes added a new level of formality to a very loose language whilst promises
+                                  simplified JavaScripts somewhat messy asynchronicity. Let this be your guide to all
+                                  that is new in ES6. 
+            </p>
+        </div>
+        <div id="feature-example">
+            <pre><code id="example_js">
+
+            </code></pre>
+        </div>
+    </div>
+    
+    
+    <div id="footer">
+        
+    </div>
+<script src="main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js">
+    //hljs.initHighlightingOnLoad();
+    hljs.highlightAll();
+</script>
+<!--<script src="prism-okadia-whitespace.js"></script> -->
+</body>
+</html>

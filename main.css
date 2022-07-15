@@ -1,0 +1,96 @@
+
+body{
+    
+   background-color: #484C47;
+    color: white;
+}
+img{
+    height: 20px;
+    max-width: 20px;
+    align-self: center;   
+}
+
+#header {
+    position: sticky;
+    text-align: left;
+    color: white;
+    margin: 0 0 0 0;
+    width: 100vw;
+    border-color: green;
+    z-index: 4;
+}
+ul {
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1 {
+    padding: 2% 0 2% 3%;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+#nav {
+    background-color: #868C85;
+    position: absolute;
+    color: white;
+    width: 30vw;
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    margin-left: 2vh;
+}
+
+#main-content-body{
+    position: absolute;
+    border: 5px solid white;
+    left: 40%;
+    width: 40vw;
+    height: 65vh;
+}
+
+#feature-description{
+    position: relative;
+    padding: 3% 5% 3% 5%;
+    font-size: 16px;
+}
+
+#feature-example{
+    position: relative;
+}
+.exampleImg{
+    height: 260px;
+    max-width: 260px;
+}
+
+.topic-head{
+   font-size: 1.3em;
+   font-weight: bold;
+   margin-bottom: 5%;
+}
+.concept-head{
+   font-size: 1.1em;
+   font-weight: normal;
+}
+.inner-list-els{
+    font-size: 1rem;
+    background-color: #484C47; 
+    width: 100%;
+    padding: 0.5rem 0 0.25rem 0; 
+}
+
+.outer-list-els{
+    background-color: #868C85;
+    font-size: 1.25rem;
+}
+
+.topic{
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
